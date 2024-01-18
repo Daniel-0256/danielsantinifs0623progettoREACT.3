@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* NAVBAR */
+#navbar {
+  background-color: black;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#containerNav {
+  height: 100vh;
+  margin: 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#logo {
+  width: 150px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#search {
+  border-radius: 4px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  width: 160px;
+}
+#buttonSearch {
+  background-color: black;
+  border-color: white;
+  border-radius: 4px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+#signUp {
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+#signUp:hover {
+  background-color: green;
+  border-color: green;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#login {
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: black;
+  border-color: white;
+}
+#login:hover {
+  background-color: white;
+  color: black;
+}
+#cookie a {
+  text-decoration-color: black;
+}
+#cookie a:hover {
+  text-decoration-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ALBUM-PAGE */
+#albumPage {
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(to right, #285874, #001a29);
+}
+#linkAlbumPage a {
+  font-size: 12px;
+  text-decoration: none;
+  color: rgb(255, 254, 254);
+  font-weight: 500;
+}
+#play {
+  background-color: rgb(49, 49, 49);
+  padding: 25px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+#play img {
+  margin: 0px 12px 20px 12px;
+  width: 15px;
+  height: auto;
+}
+#progressBar {
+  width: 500px;
+  height: 2px;
+}
+#cardAlbum {
+  display: flex;
+  justify-content: center;
 }
