@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const CardAlbum = () => {
   const [albums, setAlbums] = useState([]);
@@ -30,17 +30,19 @@ const CardAlbum = () => {
   }, []);
 
   return (
-    <Row>
+    <div className="d-flex flex-wrap justify-content-center">
       {albums.map((album) => (
-        <Col key={album.id} xl={3} id="cardAlbum">
-          
+        <div key={album.id} id="cardAlbum" className="m-3 mt-5 p-2">
+          <Link to="/DettagliAlbum" style={{ textDecoration: 'none', color: 'white' }}>
+          <div className="d-flex flex-column align-items-center">
             <img src={album.album.cover} alt="img" />
-            <p>Album:{album.album.title}</p>
+            <p className="mt-2">Album:{album.album.title}</p>
             <p>Artist:{album.artist.name}</p>
-          
-        </Col>
+          </div>
+          </Link>
+        </div>
       ))}
-    </Row>
+    </div>
   );
 };
 
